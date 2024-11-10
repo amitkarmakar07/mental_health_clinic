@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Staff Dashboard</title>
+    <link rel="stylesheet" href="medstaff_dashboard.css">
+</head>
+<body>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h2>Mental Health Care System</h2>
+        <ul>
+            <li><a href="medstaff_dashboard.html" class="active">Home</a></li>
+            <li><a href="#">Doctor List</a></li>
+            <li><a href="pat-his.html">Patient history</a></li>
+            <li><a href="manage_appointments.html">Manage Appointment List</a></li>
+            <li><a href="billing.html">Billing</a></li>
+            <li><a href="tips.html">Mental Health Tips</a></li>
+            <li><a href="../index.html">Log Out</a></li>
+        </ul>
+    </div>
+
+    <!-- Main content -->
+    <div class="main-content">
+        <div class="header">
+            <input type="text" placeholder="Search doctors, patients, appointments...">
+            <div class="profile">
+                <span>Profile</span>
+                <span>Medical Staff</span>
+            </div>
+        </div>
+
+        <!-- Dashboard Cards -->
+        <div class="dashboard-cards">
+            <div class="card">
+                <h3>Doctor on Duty</h3>
+                <p>5</p>
+            </div>
+            <div class="card">
+                <h3>Patient Records</h3>
+                <p>150</p>
+            </div>
+            <div class="card">
+                <h3>Appointments Today</h3>
+                <p>20</p>
+            </div>
+            <div class="card">
+                <h3>Pending Bills</h3>
+                <p>3</p>
+            </div>
+        </div>
+
+        <!-- Upcoming Appointments -->
+        <div class="appointment-list">
+            <h3>Upcoming Appointments</h3>
+            <div class="appointment">
+                <strong>John Doe</strong> - 10:00 AM
+            </div>
+            <div class="appointment">
+                <strong>Jane Smith</strong> - 11:30 AM
+            </div>
+            <div class="appointment">
+                <strong>Michael Johnson</strong> - 2:00 PM
+            </div>
+        </div>
+    </div>
+
+    <script src="medstaff_dashboard.js"></script>
+</body>
+</html>

@@ -1,0 +1,156 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    min-height: 100vh;
+    background-color: #f3f3f3;
+    margin: 0;
+}
+
+.sidebar {
+    background-color: #0c3c5d;
+    color: white;
+    height: 100vh;
+    padding: 20px;
+    width: 250px;
+    position: fixed;
+    overflow-y: auto; /* Allows scrolling if content overflows */
+}
+
+.sidebar h2 {
+    margin-bottom: 30px;
+    font-size: 1.5em;
+    line-height: 1.2; /* Adjusts line height for better spacing */
+    word-wrap: break-word; /* Breaks long words if they don’t fit */
+    text-align: center;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 20px;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.sidebar ul li a.active {
+    background-color: #0056b3;
+}
+
+.sidebar ul li a:hover {
+    background-color: #004080;
+}
+
+/* Main content styling */
+.billing-container {
+    margin-left: 260px;
+    padding: 20px;
+    background-color: #fff;
+    width: calc(100% - 260px);
+}
+
+h1, h2 {
+    color: #003049;
+    text-align: center;
+}
+
+.billing-form {
+    background-color: #e7f3fe;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #b3d4fc;
+    border-radius: 8px;
+}
+
+.billing-form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.billing-form input,
+.billing-form select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.billing-form button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.billing-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Styling for the generated bills section */
+.bills-list {
+    background-color: #f3f3f3;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.bills-list h2 {
+    margin-bottom: 15px;
+}
+
+.bill {
+    background-color: #e7f3fe;
+    border: 1px solid #b3d4fc;
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.bill p {
+    margin: 5px 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .billing-container {
+        margin-left: 0;
+        padding: 15px;
+        width: 100%;
+    }
+
+    .billing-form,
+    .bills-list {
+        margin-bottom: 20px;
+    }
+}
