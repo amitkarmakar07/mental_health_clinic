@@ -1,0 +1,148 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f8fa;
+}
+
+.sidebar {
+    position: fixed;
+    width: 250px;
+    height: 100%;
+    background-color: #003049;
+    padding-top: 20px;
+}
+
+.sidebar .brand h2 {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.sidebar .nav-links, .sidebar .apps {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar .nav-links li, .sidebar .apps li {
+    padding: 15px;
+    text-align: left;
+}
+
+.sidebar .nav-links li a, .sidebar .apps li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+}
+
+.sidebar .nav-links li.active a {
+    background-color: #002fff;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.sidebar .nav-links li a:hover, .sidebar .apps li a:hover {
+    background-color: #1b6ca8;
+    border-radius: 5px;
+}
+
+.main-content {
+    margin-left: 260px;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.welcome-box {
+    display: flex;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 90%;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.welcome-img {
+    max-width: 150px;
+    margin-right: 20px;
+}
+
+.welcome-text {
+    color: #003049;
+}
+
+.welcome-text h2 {
+    margin: 0;
+    color: #333;
+}
+
+.welcome-text .patient-name {
+    color: #1b6ca8;
+}
+
+.welcome-text p {
+    margin-top: 5px;
+    color: #777;
+}
+
+.stats-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px auto;
+    width: 90%;
+    flex-wrap: wrap;
+}
+
+.stat-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+    flex: 1;
+    min-width: 100px;
+}
+
+.stat-card .icon {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.stat-card h3 {
+    margin: 10px 0;
+    color: #003049;
+}
+
+.stat-card p {
+    color: #1b6ca8;
+    font-size: 1.5em;
+}
+
+.stat-card .trend {
+    color: #777;
+    font-size: 0.9em;
+}
+
+/* Add responsiveness */
+@media (max-width: 768px) {
+    .main-content {
+        margin-left: 0;
+    }
+
+    .stats-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .stat-card {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+}

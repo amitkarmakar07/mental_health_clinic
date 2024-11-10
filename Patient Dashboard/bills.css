@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.sidebar {
+    position: fixed;
+    width: 250px;
+    height: 100vh;
+    background-color: #003049;
+    padding-top: 20px;
+    color: white;
+}
+
+.sidebar h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1.5em;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    padding: 15px;
+    text-align: center;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    font-size: 1em;
+}
+
+.sidebar ul li a:hover, .sidebar ul li a.active {
+    background-color: #1b6ca8;
+    border-radius: 5px;
+}
+
+.main-content {
+    margin-left: 260px;
+    padding: 20px;
+    width: calc(100% - 260px);
+    background-color: #f5f8fa;
+}
+
+h1 {
+    text-align: center;
+    color: #003049;
+}
+
+.bills-list {
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.bill {
+    background-color: #e8e8e8;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.bill p {
+    margin: 5px 0;
+    font-size: 16px;
+}

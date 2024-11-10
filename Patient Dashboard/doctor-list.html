@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor List</title>
+    <link rel="stylesheet" href="doctor-list.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="brand">
+            <h2>Mental Health Care System</h2>
+        </div>
+        <ul class="nav-links">
+            <li class="active"><a href="patient-home.html">Home</a></li>
+            <li><a href="doctor-list.html">Doctors List</a></li>
+            <li><a href="appointment.html">Your Appointments</a></li>
+            <li><a href="mental-health-tips.html">Mental Health Tips</a></li>
+            <li><a href="bills.html">bills</a></li>
+        </ul>
+        <ul class="apps">
+            <li><a href="../index.html">Log out</a></li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <h2>Available Doctors</h2>
+        <div id="doctor-list" class="card-container">
+            <!-- Doctor cards will be dynamically added here -->
+        </div>
+    </div>
+
+    <!-- Modal for booking appointment -->
+    <div id="bookingModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" id="closeModal">&times;</span>
+            <h2>Book Appointment</h2>
+            <form id="appointmentForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+                <label for="mobile">Mobile Number:</label>
+                <input type="text" id="mobile" required>
+                <label for="disease">Disease:</label>
+                <select id="disease">
+                    <option value="Anxiety">Anxiety</option>
+                    <option value="Depression">Depression</option>
+                    <option value="Bipolar Disorder">Bipolar Disorder</option>
+                </select>
+                <label for="day">Select Day:</label>
+                <select id="day">
+                    <!-- Options dynamically populated based on doctor's available days -->
+                </select>
+                <label for="time">Time Slot:</label>
+                <select id="time">
+                    <option value="10:00 AM">10:00 AM</option>
+                    <option value="02:00 PM">02:00 PM</option>
+                </select>
+                <label for="description">Description:</label>
+                <textarea id="description"></textarea>
+                <button type="button" id="submitAppointment">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="doctor-list.js"></script>
+</body>
+</html>

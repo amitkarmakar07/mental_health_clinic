@@ -1,0 +1,151 @@
+/* Basic reset for margins and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    margin: 0;
+    min-height: 100vh;
+    background-color: #f3f7fa;
+}
+
+.sidebar {
+    width: 200px;
+    position: fixed;
+    height: 100%;
+    background-color: #0A3D62;
+    padding-top: 20px;
+}
+
+.sidebar h2 {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 15px;
+    text-align: center;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+}
+
+.sidebar ul li a:hover,
+.sidebar ul li a.active {
+    background-color: #1B9CFC;
+}
+
+/* Brand styling */
+.brand {
+    text-align: center;
+    padding: 10px;
+}
+
+.brand h2 {
+    font-size: 1.5em;
+    color: #fff;
+}
+
+/* Navigation links */
+.nav-links,
+.apps {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.nav-links li,
+.apps li {
+    text-align: center;
+}
+
+.nav-links li a,
+.apps li a {
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+    padding: 15px;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.nav-links li a:hover,
+.nav-links li.active a {
+    background-color: #1b6ca8;
+    border-radius: 5px;
+}
+
+.apps li a {
+    color: #ffb3b3; /* Different color for logout */
+}
+
+.apps li a:hover {
+    background-color: #ff3333;
+}
+
+/* Main content styling */
+.main-content {
+    margin-left: 250px; /* Offset to align next to sidebar */
+    padding: 20px;
+    flex: 1;
+    background-color: #ffffff;
+    color: #333;
+}
+
+.main-content h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #003049;
+}
+
+.tips-list h3 {
+    font-size: 1.5em;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+/* Tip card styling */
+.tip {
+    background-color: #e7f3fe;
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 1px solid #b3d4fc;
+    border-radius: 5px;
+    color: #333;
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .main-content {
+        margin-left: 0;
+        padding: 15px;
+    }
+}
