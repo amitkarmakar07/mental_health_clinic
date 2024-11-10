@@ -1,0 +1,114 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    display: flex;
+}
+
+.sidebar {
+    position: fixed;
+    width: 250px;
+    height: 100vh;
+    background-color: #003049;
+    padding-top: 20px;
+}
+
+.sidebar .brand h2 {
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.sidebar .nav-links, .sidebar .apps {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar .nav-links li, .sidebar .apps li {
+    text-align: left;
+}
+
+.sidebar .nav-links li a, .sidebar .apps li a {
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+    padding: 15px;
+    font-size: 16px;
+}
+
+.sidebar .nav-links li.active a {
+    background-color: #1b6ca8;
+    border-radius: 5px;
+}
+
+.sidebar .nav-links li a:hover, .sidebar .apps li a:hover {
+    background-color: #1b6ca8;
+    border-radius: 5px;
+}
+
+/* Main Content */
+.update-profile-container {
+    margin-left: 260px;
+    padding: 40px;
+    background-color: #ffffff;
+    width: calc(100% - 260px);
+    max-width: 500px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.update-profile-container h2 {
+    text-align: center;
+    color: #003049;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.form-group button {
+    width: 100%;
+    padding: 10px;
+    background-color: #3c27ff;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.form-group button:hover {
+    background-color: #2824ff;
+}
+
+.back-to-dashboard {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #3c27ff;
+    font-size: 16px;
+}
+
+.back-to-dashboard:hover {
+    text-decoration: underline;
+}

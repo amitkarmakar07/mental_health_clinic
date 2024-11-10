@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient History - Doctor</title>
+    <link rel="stylesheet" href="patient_history.css">
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Doctor Dashboard</h2>
+        <ul>
+            <li><a href="doctor.html">Home</a></li>
+            <li><a href="appointments.html">Appointments</a></li>
+            <li class="active"><a href="patient_history.html">Patient History</a></li>
+            <li><a href="update_profile.html">Update Profile</a></li>
+            <li><a href="../index.html">Log Out</a></li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <h1>Patient History</h1>
+        <div class="patient-list" id="patient-list">
+            <!-- Patient items will be populated here -->
+        </div>
+
+        <div class="patient-details">
+            <h2>Patient Details</h2>
+            <p><strong>Name:</strong> <span id="patient-name">Select a patient</span></p>
+            <p><strong>Mobile:</strong> <span id="patient-mobile"></span></p>
+            <p><strong>Disease:</strong> <span id="patient-disease"></span></p>
+            <p><strong>Description:</strong> <span id="patient-description"></span></p>
+            <p><strong>Doctor Name:</strong> <span id="doctor-name"></span></p>
+        </div>
+    </div>
+
+    <script src="patient_history.js"></script>
+</body>
+</html>

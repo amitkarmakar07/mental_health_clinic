@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Dashboard</title>
+    <link rel="stylesheet" href="doctor.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="brand">
+            <h2>Mental Health Care System</h2>
+        </div>
+        <ul class="nav-links">
+            <li class="active"><a href="doctor.html">Home</a></li>
+            <li><a href="appointments.html">Appointments</a></li>
+            <li><a href="patient_history.html">Patient History</a></li>
+            <li><a href="update_profile.html">Update Profile</a></li>
+        </ul>
+        <ul class="apps">
+            <li><a href="../index.html">Log out</a></li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <header>
+            <div class="search-bar">
+                <input type="text" placeholder="Search patients, appointments...">
+            </div>
+            <div class="profile">
+                <img src="profile.png" alt="Profile" class="profile-pic" id="profile-pic">
+                <span class="profile-name" id="profile-name">Dr. Koustav Podder</span>
+            </div>
+        </header>
+
+        <div class="stats-cards">
+            <div class="card">
+                <span class="icon">📅</span>
+                <h2>20</h2>
+                <p>Appointments Today</p>
+            </div>
+            <div class="card">
+                <span class="icon">📋</span>
+                <h2>10</h2>
+                <p>Patient History Reviewed</p>
+            </div>
+            <div class="card">
+                <span class="icon">📝</span>
+                <h2>5</h2>
+                <p>Pending Follow-ups</p>
+            </div>
+        </div>
+
+        <div class="appointments-box">
+            <h3>Upcoming Appointments</h3>
+            <div class="appointments">
+                <div class="appointment-item">
+                    <h4>John Doe</h4>
+                    <p>Time: 10:00 AM</p>
+                </div>
+                <div class="appointment-item">
+                    <h4>Jane Smith</h4>
+                    <p>Time: 11:30 AM</p>
+                </div>
+                <div class="appointment-item">
+                    <h4>Michael Johnson</h4>
+                    <p>Time: 2:00 PM</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Profile Modal -->
+    <div id="profile-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" id="close-button">&times;</span>
+            <h2>Profile Details</h2>
+            <p><strong>Name:</strong> <span id="modal-doctor-name"></span></p>
+            <p><strong>Email:</strong> <span id="modal-doctor-email"></span></p>
+            <p><strong>Phone:</strong> <span id="modal-doctor-phone"></span></p>
+            <p><strong>Specialization:</strong> <span id="modal-doctor-specialization"></span></p>
+            <p><strong>Experience:</strong> <span id="modal-doctor-experience"></span></p>
+            <p><strong>Qualifications:</strong> <span id="modal-doctor-qualifications"></span></p>
+            <a href="update_profile.html" class="update-profile-link">Update Profile</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

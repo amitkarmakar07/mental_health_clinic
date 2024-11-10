@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor's Appointments</title>
+    <link rel="stylesheet" href="appointments.css">
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Mental Health Care System</h2>
+        <ul class="nav-links">
+            <li><a href="doctor.html">Home</a></li>
+            <li class="active"><a href="appointments.html">Appointments</a></li>
+            <li><a href="patient_history.html">Patient History</a></li>
+            <li><a href="update_profile.html">Update Profile</a></li>
+        </ul>
+        <ul class="apps">
+            <li><a href="../index.html">Log out</a></li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <header>
+            <div class="profile">
+                <img src="profile.jpg" alt="Profile" class="profile-pic" width="40">
+                <span class="profile-name">Dr. Koustav Podder</span>
+            </div>
+        </header>
+
+        <h1>Confirmed Appointments</h1>
+        <div class="appointments-box">
+            <h3>Appointments List</h3>
+            <div id="doctor-appointment-container">
+                <!-- Confirmed appointments will appear here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="appointments.js"></script>
+</body>
+</html>
