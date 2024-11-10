@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor List</title>
+    <link rel="stylesheet" href="doctor.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="brand">
+            <h2>Mental Health Care System</h2>
+        </div>
+        <ul class="nav-links">
+            <li><a href="admin.html">Home</a></li>
+            <li class="active"><a href="doctor.html">View Doctor List</a></li>
+            <li><a href="staff.html">View Staff List</a></li>
+            <li><a href="revenue.html">Check Revenue</a></li>
+            <li><a href="#">Update Profile</a></li>
+        </ul>
+        <ul class="apps">
+            <li><a href="../index.html">Log out</a></li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <header>
+            <div class="search-bar">
+                <input type="text" id="search-input" placeholder="Search by doctor name..." onkeyup="searchDoctors()">
+            </div>
+        </header>
+
+        <div id="doctor-list" class="card-container">
+            <!-- Doctor cards will be dynamically added here -->
+        </div>
+    </div>
+
+    <!-- Edit Modal -->
+    <div id="edit-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Edit Doctor Details</h2>
+            <form id="edit-form">
+                <label for="doctor-name">Name:</label>
+                <input type="text" id="doctor-name" required>
+                <label for="doctor-age">Age:</label>
+                <input type="number" id="doctor-age" required>
+                <label for="doctor-specialist">Specialist:</label>
+                <input type="text" id="doctor-specialist" required>
+                <label for="doctor-salary">Salary:</label>
+                <input type="number" id="doctor-salary" required>
+                <input type="hidden" id="edit-doctor-index">
+                <button type="submit">Save Changes</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
