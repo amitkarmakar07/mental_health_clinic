@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Login Page</title>
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-left">
+            <img src="medical_image.jpg" alt="Medical Illustration">
+            <h1></h1>
+        </div>
+        <div class="login-right">
+            <div class="login-form">
+                <h2>Welcome to  MHC</h2>
+                <div class="user-role">
+                    <button id="admin" onclick="setUserRole('admin')">Admin</button>
+                    <button id="doctor" onclick="setUserRole('doctor')">Doctor</button>
+                    <button id="patient" onclick="setUserRole('patient')">Patient</button>
+                    <button id="staff" onclick="setUserRole('staff')">Staff</button>
+                </div>
+                <form id="loginForm" onsubmit="return validateLogin(event)">
+                    <div class="input-group">
+                        <input type="text" id="username" placeholder="Username*" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="password" id="password" placeholder="Password*" required>
+                    </div>
+                    <div class="remember-me">
+                        <input type="checkbox" id="rememberMe"> Remember me
+                        <a href="#" class="forgot-password">Forgot Password?</a>
+                    </div>
+                    <button type="submit" class="login-btn">Login</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
