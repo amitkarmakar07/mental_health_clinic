@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="brand">
+            <h2>Mental Health Care System</h2>
+        </div>
+        <ul class="nav-links">
+            <li class="active" ><a href="admin.html">Home</a></li>
+            <li ><a href="doctor.html">View Doctor List </a></li>
+            <li><a href="staff.html">View Staff List</a></li>
+            <li><a href="revenue.html">Check Revenue</a></li>
+            <li><a href="#">Update Profile</a></li>
+        </ul>
+        <ul class="apps">
+            <li><a href="../index.html">Log out</a></li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <header>
+            <div class="search-bar">
+                <input type="text" placeholder="Type here to search...">
+            </div>
+            <div class="profile">
+                <img src="profile.png" alt="Profile" class="profile-pic">
+                <span class="profile-name">Amit Karmakar</span>
+            </div>
+        </header>
+
+        <div class="stats-cards">
+            <div class="card">
+                <span class="icon">👤</span>
+                <h2>24</h2>
+                <p>Doctors</p>
+            </div>
+            <div class="card">
+                <span class="icon">👩‍⚕️</span>
+                <h2>70</h2>
+                <p>Staffs</p>
+            </div>
+            <div class="card">
+                <span class="icon">👥</span>
+                <h2>350</h2>
+                <p>Patients</p>
+            </div>
+            <div class="card">
+                <span class="icon">💊</span>
+                <h2>45</h2>
+                <p>Pharmacists</p>
+            </div>
+        </div>
+        <div class="appointments-box">
+            <h3>Appointment Stats</h3>
+            <div class="appointments">
+                <div class="appointment-item">
+                    <h4>Number of Appointments</h4>
+                    <p>1200</p>
+                </div>
+                <div class="appointment-item">
+                    <h4>Cancelled Appointments</h4>
+                    <p>150</p>
+                </div>
+                <div class="appointment-item">
+                    <h4>Follow-up Appointments</h4>
+                    <p>300</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
